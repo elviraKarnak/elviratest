@@ -25,4 +25,4 @@ jobs:
           exclude: |
             **/.git*
             **/.github/**
-            wp-content/uploads/**
+            wp-content/uploads/**git add .

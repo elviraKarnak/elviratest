@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/main-style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="banner_hero">
+        <img src="./assets/images/hero-banner.webp" alt="hero-banner" />
+      </section>
+      <section class="main_searched_wrapper">
+        <div class="container">
+          <div class="search_field_wrapper">
+            <form action="#" class="search_form">
+              <input
+                type="text"
+                placeholder="Search"
+                id="search_field"
+                value="graeme bell"
+              />
+              <input type="submit" id="search_btn" value="Search" />
+            </form>
+            <div class="filter_wrapper">
+              <button type="button" class="filter_btn">Advanced Search</button>
+              <div class="filer_option">
+                <p class="heading">Advanced Search</p>
+                <p class="description">Find based on a specific type</p>
+                <div class="options_wrap">
+                  <button class="option">
+                    <div>
+                      <div class="img_wrap">
+                        <img
+                          src="./assets/images/artist-blue-icon.svg"
+                          alt="artist-icon"
+                        />
+                      </div>
+                      <p class="title">Artist</p>
+                    </div>
+                    <div>
+                      <img src="./assets/images/arrow-blue.svg" alt="" />
+                    </div>
+                  </button>
+                  <button class="option">
+                    <div>
+                      <img
+                        src="./assets/images/band-icon.svg"
+                        alt="band-icon"
+                      />
+                      <p class="title">Band</p>
+                    </div>
+                    <div>
+                      <img src="./assets/images/arrow-blue.svg" alt="arrow" />
+                    </div>
+                  </button>
+                  <button class="option">
+                    <div>
+                      <img
+                        src="./assets/images/musician-icon.svg"
+                        alt="musician-icon"
+                      />
+                      <p class="title">Musician</p>
+                    </div>
+                    <div>
+                      <img src="./assets/images/arrow-blue.svg" alt="arrow" />
+                    </div>
+                  </button>
+                  <button class="option">
+                    <div>
+                      <img
+                        src="./assets/images/track-icon.svg"
+                        alt="track-icon"
+                      />
+                      <p class="title">Track</p>
+                    </div>
+                    <div>
+                      <img src="./assets/images/arrow-blue.svg" alt="arrow" />
+                    </div>
+                  </button>
+                  <button class="option">
+                    <div>
+                      <img
+                        src="./assets/images/object-icon.svg"
+                        alt="object-icon"
+                      />
+                      <p class="title">Object</p>
+                    </div>
+                    <div>
+                      <img src="./assets/images/arrow-blue.svg" alt="arrow" />
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="search_tabs_wrap">
+          <div class="container">
+            <ul class="search_tab_wrap">
+              <li class="search_tab"><a href="./searchScreen.html">All</a></li>
+              <li class="search_tab">
+                <a href="./searchScreenArtist.html">Artist</a>
+              </li>
+              <li class="search_tab active">
+                <a href="./searchScreenBand.html">Band</a>
+              </li>
+              <li class="search_tab">
+                <a href="./searchScreenMusician.html">Musician</a>
+              </li>
+              <li class="search_tab">
+                <a href="./searchScreenTrack.html">Track</a>
+              </li>
+              <li class="search_tab">
+                <a href="./searchScreenObjectAll.html">Object</a>
+                <div class="down_chevron"></div>
+                <div class="sub_list_wrap">
+                  <p class="hdng">Object Types:</p>
+                  <ul class="sub_list">
+                    <li>
+                      <input type="radio" id="Ephemera" name="object_type" />
+                      <label for="Ephemera">Ephemera</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="Instrument" name="object_type" />
+                      <label for="Instrument">Instrument</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="music" name="object_type" />
+                      <label for="music">Music</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="video" name="object_type" />
+                      <label for="video">Video</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="image" name="object_type" />
+                      <label for="image">Image</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="interview" name="object_type" />
+                      <label for="interview">Interview</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="printed" name="object_type" />
+                      <label for="printed">Printed Material</label>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="search_tab">
+                Tools
+                <div class="down_chevron"></div>
+                <div class="sub_list_wrap">
+                  <p class="hdng">Sort By:</p>
+                  <ul class="sub_list">
+                    <li>
+                      <input type="radio" id="Relevance" name="tool_type" />
+                      <label for="Relevance">Relevance (Default)</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="Name" name="tool_type" />
+                      <label for="Name">Name</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="Date" name="tool_type" />
+                      <label for="Date">Date</label>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="searched_area_wrap">
+          <div class="container">
+            <div class="searched_lists_wrap">
+              <div class="searched_list">
+                <h3 class="title open_popup">
+                  25th Australian Jazz Convention - Dubbo - 1970 - Roger Bell /
+                  Graeme Bell
+                </h3>
+                <p class="desc">
+                  25th Australian Jazz Convention - Dubbo - 1970 - Roger Bell /
+                  Graeme Bell
+                </p>
+                <div class="tags_wrap">
+                  <span class="band_tag tag">Band</span>
+                </div>
+              </div>
+              <div class="searched_list">
+                <h3 class="title">Ade Monsbourgh / Graeme Bell</h3>
+                <p class="desc">Ade Monsbourgh / Graeme Bell</p>
+              </div>
+              <div class="searched_list">
+                <h3 class="title">
+                  Ade Monsbourgh / Graeme Bell / Dave Dallwitz / Rex Green
+                </h3>
+                <p class="desc">
+                  Ade Monsbourgh / Graeme Bell / Dave Dallwitz / Rex Green
+                </p>
+                <div class="tags_wrap">
+                  <span class="band_tag tag">Band</span>
+                </div>
+              </div>
+              <div class="searched_list">
+                <h3 class="title">Ade Monsbourgh / Graeme Bell Trio</h3>
+                <p class="desc">Ade Monsbourgh / Graeme Bell Trio</p>
+                <div class="tags_wrap">
+                  <span class="band_tag tag">Band</span>
+                </div>
+              </div>
+              <div class="searched_list">
+                <h3 class="title">Allan Browne Jazz Band / Graeme Bell</h3>
+                <p class="desc">Allan Browne Jazz Band / Graeme Bell</p>
+                <div class="tags_wrap">
+                  <span class="band_tag tag">Band</span>
+                </div>
+              </div>
+              <div class="total_result">
+                <p>273 results found</p>
+                <span
+                  >Includes Multimedia
+                  <img
+                    src="./assets/images/attachment-icon.svg"
+                    alt="attachment-icon"
+                /></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="custom_popup">
+        <div class="custom_popup_wrapper">
+          <div class="popup_head">
+            <p class="icon_text band">Band</p>
+            <h4 class="title">Ade Monsbourgh / Graeme Bell Trio</h4>
+            <button class="cross_btn">Close</button>
+          </div>
+          <div class="popup_body">
+            <div class="record_wrapper">
+              <div class="left_wrapper">
+                <div class="info_row">
+                  <p class="title">Name:</p>
+                  <p class="value">Ade Monsbourgh / Graeme Bell Trio</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popup_footer">
+            <div class="table_tab">
+              <div class="tab_btn_group">
+                <button class="tab_btn active" data-tab="tracks">Tracks</button>
+                <button class="tab_btn" data-tab="objects">Objects</button>
+                <button class="tab_btn" data-tab="musicians">Musicians</button>
+              </div>
+              <div class="record_table">
+                <div class="table_wrap active" id="tracks">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Album</th>
+                        <th>No</th>
+                        <th>Track Name</th>
+                        <th>Date</th>
+                        <th>Band</th>
+                        <th>Composer</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <img
+                            src="./assets/images/play-icon.svg"
+                            alt="play-icon.svg"
+                          />Highlights Mildura Jazz
+                        </td>
+                        <td>108</td>
+                        <td>Whistling Rufus</td>
+                        <td>12.10.1986</td>
+                        <td>Ade Monsbourgh/</td>
+                        <td>Kerry Mills</td>
+                        <td>
+                          <img
+                            src="./assets/images/attachemnt-icon-gray.svg"
+                            alt="attachment-icon"
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img
+                            src="./assets/images/play-icon.svg"
+                            alt="play-icon.svg"
+                          />Highlights Mildura Jazz
+                        </td>
+                        <td>225</td>
+                        <td>My Gal Sal</td>
+                        <td>12.10.1986</td>
+                        <td>Ade Monsbourgh/</td>
+                        <td>Paul Dresser</td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="table_wrap" id="objects">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Album</th>
+                        <th>No</th>
+                        <th>Track Name</th>
+                        <th>Date</th>
+                        <th>Band</th>
+                        <th>Composer</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <img
+                            src="./assets/images/play-icon.svg"
+                            alt="play-icon.svg"
+                          />Highlights Mildura Jazz
+                        </td>
+                        <td>108</td>
+                        <td>Whistling Rufus</td>
+                        <td>12.10.1986</td>
+                        <td>Ade Monsbourgh/</td>
+                        <td>Kerry Mills</td>
+                        <td>
+                          <img
+                            src="./assets/images/attachemnt-icon-gray.svg"
+                            alt="attachment-icon"
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img
+                            src="./assets/images/play-icon.svg"
+                            alt="play-icon.svg"
+                          />Highlights Mildura Jazz
+                        </td>
+                        <td>225</td>
+                        <td>My Gal Sal</td>
+                        <td>12.10.1986</td>
+                        <td>Ade Monsbourgh/</td>
+                        <td>Paul Dresser</td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="table_wrap" id="musicians">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Albu</th>
+                        <th>No</th>
+                        <th>Track Name</th>
+                        <th>Date</th>
+                        <th>Band</th>
+                        <th>Composer</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <img
+                            src="./assets/images/play-icon.svg"
+                            alt="play-icon.svg"
+                          />Highlights Mildura Jazz
+                        </td>
+                        <td>108</td>
+                        <td>Whistling Rufus</td>
+                        <td>12.10.1986</td>
+                        <td>Ade Monsbourgh/</td>
+                        <td>Kerry Mills</td>
+                        <td>
+                          <img
+                            src="./assets/images/attachemnt-icon-gray.svg"
+                            alt="attachment-icon"
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img
+                            src="./assets/images/play-icon.svg"
+                            alt="play-icon.svg"
+                          />Highlights Mildura Jazz
+                        </td>
+                        <td>225</td>
+                        <td>My Gal Sal</td>
+                        <td>12.10.1986</td>
+                        <td>Ade Monsbourgh/</td>
+                        <td>Paul Dresser</td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./assets/js/function.js"></script>
+  </body>
+</html>

@@ -1,0 +1,213 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Elvira Menu Expiration Control\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-16 12:19+0000\n"
+"PO-Revision-Date: 2025-10-16 12:19+0000\n"
+"Last-Translator: \n"
+"Language-Team: English (United States)\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.0; wp-6.8.3; php-8.2.29\n"
+"X-Domain: elvira-menu-expiration-control"
+
+#: includes/pro/class-emec-pro-frontend.php:62
+msgid "+ Add another window"
+msgstr "+ Add another window"
+
+#: includes/class-emec-license.php:78
+msgid "Activate License"
+msgstr "Activate License"
+
+#: includes/pro/class-emec-pro-frontend.php:41
+msgid ""
+"Add multiple date/time windows, restrict by day of week, and target by roles "
+"or user IDs."
+msgstr ""
+"Add multiple date/time windows, restrict by day of week, and target by roles "
+"or user IDs."
+
+#: includes/class-emec-admin.php:119
+#: includes/pro/class-emec-pro-frontend.php:212
+msgid "Allowed roles (any)"
+msgstr "Allowed roles (any)"
+
+#: includes/pro/class-emec-pro-frontend.php:223
+msgid "Allowed user IDs"
+msgstr "Allowed user IDs"
+
+#: includes/class-emec-admin.php:85
+msgid ""
+"Basic scheduling (Free): set start/end and simple visibility (everyone / "
+"logged-in / logged-out / roles)."
+msgstr ""
+"Basic scheduling (Free): set start/end and simple visibility (everyone / "
+"logged-in / logged-out / roles)."
+
+#: includes/pro/class-emec-pro-frontend.php:200
+msgid "Days of week"
+msgstr "Days of week"
+
+#: includes/class-emec-license.php:84
+msgid "Deactivate License"
+msgstr "Deactivate License"
+
+#: includes/class-emec-license.php:320
+msgid "Deactivated locally but remote deactivation failed:"
+msgstr "Deactivated locally but remote deactivation failed:"
+
+#: includes/pro/class-emec-pro-frontend.php:224
+msgid "e.g., 2,15,27"
+msgstr "e.g., 2,15,27"
+
+#. Name of the plugin
+msgid "Elvira Menu Expiration Control"
+msgstr "Elvira Menu Expiration Control"
+
+#: includes/class-emec-license.php:63
+msgid "Elvira Menu Expiration Control — License"
+msgstr ""
+
+#: includes/class-emec-admin.php:90
+msgid "Enable schedule"
+msgstr ""
+
+#: includes/pro/class-emec-pro-frontend.php:178
+msgid "End (date)"
+msgstr ""
+
+#: includes/class-emec-admin.php:100
+msgid "End (datetime)"
+msgstr ""
+
+#: includes/class-emec-admin.php:107
+msgid "Everyone"
+msgstr ""
+
+#: includes/class-emec-admin.php:115 includes/class-emec-admin.php:130
+msgid ""
+"For role-specific rules and multiple windows, activate Pro with your license "
+"key."
+msgstr ""
+
+#: includes/pro/class-emec-pro-frontend.php:188
+msgid "From (time of day)"
+msgstr ""
+
+#: includes/class-emec-admin.php:127
+msgid "Hold Ctrl/Cmd to select multiple roles."
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://elvirainfotech.com/"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://elvirainfotech.com/elvira-menu-expiration-control"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Let site owners schedule menu items or links — show/hide by date/time and "
+"audience. Free core; Pro features unlock via license."
+msgstr ""
+
+#: includes/class-emec-license.php:283
+msgid "License activated — Pro features enabled."
+msgstr ""
+
+#: includes/class-emec-license.php:290
+msgid "License deactivated."
+msgstr ""
+
+#: includes/class-emec-license.php:70
+msgid "License key"
+msgstr ""
+
+#: includes/class-emec-license.php:304
+msgid "License validation failed:"
+msgstr ""
+
+#: includes/class-emec-admin.php:108
+msgid "Logged-in users"
+msgstr ""
+
+#: includes/class-emec-admin.php:109
+msgid "Logged-out users"
+msgstr ""
+
+#: includes/class-emec-admin.php:84
+msgid "Menu Expiration Control"
+msgstr ""
+
+#: includes/pro/class-emec-pro-cpt.php:15
+msgid "Menu Schedule"
+msgstr ""
+
+#: includes/pro/class-emec-pro-cpt.php:15
+msgid "Menu Schedules"
+msgstr ""
+
+#: includes/class-emec-license.php:312
+msgid "Network error when contacting license server:"
+msgstr ""
+
+#: includes/class-emec-license.php:297
+msgid "Please enter a license key."
+msgstr ""
+
+#: includes/pro/class-emec-pro-frontend.php:39
+msgid "Pro: Multiple Schedules & Audience"
+msgstr ""
+
+#. Author of the plugin
+msgid "Raihan Reza"
+msgstr ""
+
+#: includes/pro/class-emec-pro-frontend.php:182
+msgid "Remove"
+msgstr ""
+
+#: includes/class-emec-admin.php:110
+msgid "Specific roles"
+msgstr ""
+
+#: includes/pro/class-emec-pro-frontend.php:174
+msgid "Start (date)"
+msgstr ""
+
+#: includes/class-emec-admin.php:95
+msgid "Start (datetime)"
+msgstr ""
+
+#: includes/class-emec-license.php:74
+msgid "Status"
+msgstr ""
+
+#: includes/class-emec-license.php:88
+msgid ""
+"This page uses a remote license server to validate your Pro key. The plugin "
+"also checks license status hourly via WP-Cron."
+msgstr ""
+
+#: includes/pro/class-emec-pro-frontend.php:63
+msgid ""
+"Tip: If the free start/end is enabled, both free and pro rules must pass "
+"(AND logic)."
+msgstr ""
+
+#: includes/pro/class-emec-pro-frontend.php:192
+msgid "To (time of day)"
+msgstr ""
+
+#: includes/class-emec-admin.php:105
+msgid "Visibility"
+msgstr ""
+
+#: includes/class-emec-license.php:56
+msgid "You do not have permission to access this page."
+msgstr ""

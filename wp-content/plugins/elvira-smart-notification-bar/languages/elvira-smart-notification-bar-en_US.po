@@ -1,0 +1,52 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Elvira Smart Notification Bar\n"
+"POT-Creation-Date: 2025-10-15 08:21\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: custom-extractor\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-10-15 09:31+0000\n"
+"Last-Translator: \n"
+"Language-Team: English (United States)\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.0; wp-6.8.3; php-8.2.29"
+
+#: elvira-smart-notification-bar/includes/class-snb-license.php:235
+msgid "An error occurred."
+msgstr "An error occurred."
+
+#: elvira-smart-notification-bar/includes/class-snb-license.php:214
+msgid "License activated â Pro features enabled."
+msgstr "License activated â Pro features enabled."
+
+#: elvira-smart-notification-bar/includes/class-snb-license.php:217
+msgid "License deactivated."
+msgstr "License deactivated."
+
+#: elvira-smart-notification-bar/includes/class-snb-license.php:224
+msgid "License validation failed:"
+msgstr "License validation failed:"
+
+#: elvira-smart-notification-bar/includes/class-snb-license.php:230
+msgid "Network error when contacting license server:"
+msgstr "Network error when contacting license server:"
+
+#: elvira-smart-notification-bar/includes/class-snb-license.php:220
+msgid "Please enter a license key."
+msgstr "Please enter a license key."
+
+#: elvira-smart-notification-bar/elvira-smart-notification-bar.php:51
+msgid "Settings"
+msgstr "Settings"
+
+#: elvira-smart-notification-bar/includes/pro/class-snb-pro-cpt.php:34
+msgid "Smart Bar"
+msgstr "Smart Bar"
+
+#: elvira-smart-notification-bar/includes/pro/class-snb-pro-cpt.php:34
+msgid "Smart Bars"
+msgstr "Smart Bars"

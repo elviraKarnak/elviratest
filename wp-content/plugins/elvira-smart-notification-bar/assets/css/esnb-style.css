@@ -1,0 +1,58 @@
+#esnb-bar,
+[id^="esnb-bar-"] {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 16px;
+  z-index: 99999;
+  display: none;
+}
+.esnb-top {
+  top: 0;
+}
+.esnb-bottom {
+  bottom: 0;
+}
+.esnb-btn {
+  background: rgba(255, 255, 255, 0.12);
+  color: inherit;
+  padding: 6px 10px;
+  margin-left: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.esnb-close {
+  margin-left: 15px;
+  cursor: pointer;
+}
+.esnb-timer {
+  font-weight: 600;
+  margin-left: 10px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.06);
+}
+@media (max-width: 600px) {
+  #esnb-bar,
+  [id^="esnb-bar-"] {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}
+
+/* Admin: Pro locked style (the admin overlay is inline in the settings page, but add a fallback here) */
+.esnb-pro-locked {
+  opacity: 0.6;
+  pointer-events: none;
+  position: relative;
+}
+.esnb-pro-locked .esnb-pro-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

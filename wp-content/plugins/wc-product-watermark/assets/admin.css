@@ -1,0 +1,5 @@
+
+.wcpw-wrap h1 { margin-bottom: 20px; font-weight:600; font-size:22px; }
+.wcpw-wrap .form-table th { width:240px; vertical-align:middle; }
+#wcpw_preview img { box-shadow: 0 4px 12px rgba(0,0,0,0.12); border-radius:6px; }
+.wcpw-wrap .description { color:#666; }

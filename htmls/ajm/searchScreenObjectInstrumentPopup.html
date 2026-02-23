@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/main-style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="banner_hero">
+        <img src="./assets/images/hero-banner.webp" alt="hero-banner" />
+      </section>
+      <section class="main_searched_wrapper">
+        <div class="container">
+          <div class="search_field_wrapper">
+            <form action="#" class="search_form">
+              <input
+                type="text"
+                placeholder="Search"
+                id="search_field"
+                value="graeme bell"
+              />
+              <input type="submit" id="search_btn" value="Search" />
+            </form>
+            <div class="filter_wrapper">
+              <button type="button" class="filter_btn">Advanced Search</button>
+              <div class="filer_option">
+                <p class="heading">Advanced Search</p>
+                <p class="description">Find based on a specific type</p>
+                <div class="options_wrap">
+                  <button class="option">
+                    <div>
+                      <div class="img_wrap">
+                        <img
+                          src="./assets/images/artist-blue-icon.svg"
+                          alt="artist-icon"
+                        />
+                      </div>
+                      <p class="title">Artist</p>
+                    </div>
+                    <div>
+                      <img src="./assets/images/arrow-blue.svg" alt="" />
+                    </div>
+                  </button>
+                  <button class="option">
+                    <div>
+                      <img
+                        src="./assets/images/band-icon.svg"
+                        alt="band-icon"
+                      />
+                      <p class="title">Band</p>
+                    </div>
+                    <div>
+                      <img src="./assets/images/arrow-blue.svg" alt="arrow" />
+                    </div>
+                  </button>
+                  <button class="option">
+                    <div>
+                      <img
+                        src="./assets/images/musician-icon.svg"
+                        alt="musician-icon"
+                      />
+                      <p class="title">Musician</p>
+                    </div>
+                    <div>
+                      <img src="./assets/images/arrow-blue.svg" alt="arrow" />
+                    </div>
+                  </button>
+                  <button class="option">
+                    <div>
+                      <img
+                        src="./assets/images/track-icon.svg"
+                        alt="track-icon"
+                      />
+                      <p class="title">Track</p>
+                    </div>
+                    <div>
+                      <img src="./assets/images/arrow-blue.svg" alt="arrow" />
+                    </div>
+                  </button>
+                  <button class="option">
+                    <div>
+                      <img
+                        src="./assets/images/object-icon.svg"
+                        alt="object-icon"
+                      />
+                      <p class="title">Object</p>
+                    </div>
+                    <div>
+                      <img src="./assets/images/arrow-blue.svg" alt="arrow" />
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="search_tabs_wrap">
+          <div class="container">
+            <ul class="search_tab_wrap">
+              <li class="search_tab"><a href="./searchScreen.html">All</a></li>
+              <li class="search_tab"><a href="./searchScreenArtist.html">Artist</a></li>
+              <li class="search_tab"><a href="./searchScreenBand.html">Band</a></li>
+              <li class="search_tab"><a href="./searchScreenMusician.html">Musician</a></li>
+              <li class="search_tab"><a href="./searchScreenTrack.html">Track</a></li>
+              <li class="search_tab active">
+                <a href="./searchScreenObjectAll.html">Object</a>
+                <div class="down_chevron"></div>
+                <div class="sub_list_wrap">
+                  <p class="hdng">Object Types:</p>
+                  <ul class="sub_list">
+                    <li>
+                      <input type="radio" id="Ephemera" name="object_type" />
+                      <label for="Ephemera">Ephemera</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="Instrument" name="object_type" checked/>
+                      <label for="Instrument">Instrument</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="music" name="object_type" />
+                      <label for="music">Music</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="video" name="object_type" />
+                      <label for="video">Video</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="image" name="object_type" />
+                      <label for="image">Image</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="interview" name="object_type" />
+                      <label for="interview">Interview</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="printed" name="object_type" />
+                      <label for="printed">Printed Material</label>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="search_tab">
+                Tools
+                <div class="down_chevron"></div>
+                <div class="sub_list_wrap">
+                  <p class="hdng">Sort By:</p>
+                  <ul class="sub_list">
+                    <li>
+                      <input type="radio" id="Relevance" name="tool_type" />
+                      <label for="Relevance">Relevance (Default)</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="Name" name="tool_type" />
+                      <label for="Name">Name</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="Date" name="tool_type" />
+                      <label for="Date">Date</label>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="searched_area_wrap">
+          <div class="container">
+            <div class="searched_lists_wrap">
+              <div class="searched_list">
+                <h3 class="title open_popup">Piano (Graeme Bell)</h3>
+                <p class="desc">This Instrument is dated from c1888. It's part of the Australian Jazz Museum collection.</p>
+                <div class="tags_wrap">
+                  <span class="objectpiano_tag tag">Object - Instrument c188</span>
+                </div>
+              </div>
+              <div class="total_result">
+                <p>1 results found</p>
+                <span>Includes Multimedia <img src="./assets/images/attachment-icon.svg" alt="attachment-icon"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="custom_popup active">
+        <div class="custom_popup_wrapper">
+          <div class="popup_head">
+            <!-- <p class="icon_text object">Ephemera</p> -->
+             <img
+              src="./assets/images/instrument-logo-white.svg"
+              alt="instrument-logo-white"
+              class="p_logo"
+            />
+            <h4 class="title">
+              Instrument
+            </h4>
+            <button class="cross_btn">Close</button>
+          </div>
+          <div class="popup_body">
+            <div class="record_wrapper">
+              <div class="left_wrapper">
+                <div class="info_row">
+                  <p class="title">Title:</p>
+                  <p class="value">Piano (Graeme Bell) </p>
+                </div>
+                <div class="info_row">
+                  <p class="title">Object No:</p>
+                  <p class="value">39258</p>
+                </div>
+                <div class="info_row">
+                  <p class="title">Manufacturer Date: </p>
+                  <p class="value">c1888</p>
+                </div>
+                <div class="info_row">
+                  <p class="title blue_text">Manufacturer:</p>
+                  <p class="value">C. Bechstein</p>
+                </div>
+                <div class="info_row">
+                  <p class="title blue_text">Band/Person:</p>
+                  <p class="value">Graeme Bell AO MBE</p>
+                </div>
+                <div class="info_row">
+                  <p class="title">Collection Group:</p>
+                  <p class="value">Australian Jazz Museum</p>
+                </div>
+                <div class="info_row">
+                  <p class="title">Notes:</p>
+                  <p class="value">Provence: as per Mel Blachford’s recollection (July 9, 2024)</p>
+                </div>
+                <div class="info_row">
+                  <p class="title">Instrument Type:</p>
+                  <p class="value">Keyboard</p>
+                </div>
+              </div>
+              <div class="right_wrapper basic_slider">
+                <div class="img_wrapper slider_wrapper">
+                  <img src="./assets/images/piano.png" alt="piano">
+                  <img src="./assets/images/piano.png" alt="piano">
+                </div>
+                <div class="next_btn_wrapper">
+                  <button class="next_btn">Next</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./assets/js/function.js"></script>
+  </body>
+</html>

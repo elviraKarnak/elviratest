@@ -1,0 +1,318 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Elvira WhatsApp Quick Chat Button\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-21 07:37+0000\n"
+"PO-Revision-Date: 2025-10-21 07:39+0000\n"
+"Last-Translator: \n"
+"Language-Team: English (United States)\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.0; wp-6.8.3; php-8.2.29\n"
+"X-Domain: elvira-whatsapp-quick-chat"
+
+#: includes/pro/class-ewqc-agents.php:71
+msgid "Actions"
+msgstr "Actions"
+
+#: includes/class-ewqc-settings.php:250 includes/class-ewqc-license.php:78
+msgid "Activate License"
+msgstr "Activate License"
+
+#: includes/class-ewqc-settings.php:220
+msgid "Activate Pro License"
+msgstr "Activate Pro License"
+
+#: includes/class-ewqc-settings.php:242
+msgid "Activate your license to access:"
+msgstr "Activate your license to access:"
+
+#: includes/pro/class-ewqc-agents.php:70
+msgid "Active"
+msgstr "Active"
+
+#: includes/pro/class-ewqc-agents.php:88
+msgid "Add Agent"
+msgstr "Add Agent"
+
+#: includes/pro/class-ewqc-pro.php:34
+msgid "Add multiple support agents with round-robin distribution"
+msgstr "Add multiple support agents with round-robin distribution"
+
+#: includes/class-ewqc-settings.php:246
+msgid "Advanced analytics"
+msgstr "Advanced analytics"
+
+#: includes/pro/class-ewqc-agents.php:92
+msgid ""
+"Agents will be selected in round-robin order when customers click the "
+"WhatsApp button."
+msgstr ""
+"Agents will be selected in round-robin order when customers click the "
+"WhatsApp button."
+
+#: includes/pro/class-ewqc-pro.php:39
+msgid "Analytics Dashboard"
+msgstr "Analytics Dashboard"
+
+#: includes/pro/class-ewqc-analytics.php:78
+msgid "Analytics Dashboard (Pro)"
+msgstr "Analytics Dashboard (Pro)"
+
+#: includes/class-ewqc-settings.php:60
+msgid "Basic Settings"
+msgstr "Basic Settings"
+
+#: includes/class-ewqc-settings.php:86
+msgid "Bottom Left"
+msgstr "Bottom Left"
+
+#: includes/class-ewqc-settings.php:85
+msgid "Bottom Right"
+msgstr "Bottom Right"
+
+#: includes/class-ewqc-settings.php:82
+msgid "Button Position"
+msgstr "Button Position"
+
+#: includes/class-ewqc-settings.php:77
+msgid "Button Text"
+msgstr "Button Text"
+
+#: elvira-whatsapp-quick-chat.php:123 includes/class-ewqc-shortcode.php:28
+#: includes/class-ewqc-frontend.php:64
+msgid "Chat with us"
+msgstr "Chat with us"
+
+#: includes/class-ewqc-settings.php:247
+msgid "Conditional display rules"
+msgstr "Conditional display rules"
+
+#: includes/class-ewqc-settings.php:245
+msgid "Custom icons & styles"
+msgstr "Custom icons & styles"
+
+#: includes/pro/class-ewqc-pro.php:36
+msgid "Custom Styling"
+msgstr "Custom Styling"
+
+#: includes/pro/class-ewqc-pro.php:37
+msgid "Customize button colors, icons, and animations"
+msgstr "Customize button colors, icons, and animations"
+
+#: includes/class-ewqc-license.php:84
+msgid "Deactivate License"
+msgstr "Deactivate License"
+
+#: includes/class-ewqc-license.php:320
+msgid "Deactivated locally but remote deactivation failed:"
+msgstr "Deactivated locally but remote deactivation failed:"
+
+#: includes/class-ewqc-settings.php:72
+msgid "Default Message"
+msgstr "Default Message"
+
+#: includes/class-ewqc-settings.php:94
+msgid "Display button only on mobile devices"
+msgstr "Display button only on mobile devices"
+
+#: includes/class-ewqc-settings.php:99
+msgid "Display floating button on website"
+msgstr "Display floating button on website"
+
+#. Name of the plugin
+msgid "Elvira WhatsApp Quick Chat Button"
+msgstr ""
+
+#: includes/class-ewqc-license.php:63
+msgid "Elvira WhatsApp Quick Chat â€” License"
+msgstr "Elvira WhatsApp Quick Chat â€” License"
+
+#: includes/class-ewqc-settings.php:69
+msgid "Enter phone number with country code (e.g., 919876543210)"
+msgstr ""
+
+#: elvira-whatsapp-quick-chat.php:122
+msgid "Hello! I need some help."
+msgstr ""
+
+#: includes/class-ewqc-settings.php:264
+msgid "How to Use"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://elvirainfotech.com/"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://elvirainfotech.com/elvira-whatsapp-quick-chat"
+msgstr ""
+
+#: includes/class-ewqc-license.php:283
+msgid "License activated â€” Pro features enabled."
+msgstr ""
+
+#: includes/class-ewqc-license.php:290
+msgid "License deactivated."
+msgstr ""
+
+#: includes/class-ewqc-license.php:70
+msgid "License key"
+msgstr ""
+
+#: includes/class-ewqc-license.php:304
+msgid "License validation failed:"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Lightweight WhatsApp quick chat button with floating corner button and a "
+"shortcode [whatsapp_chat]. Free core; Pro features in includes/pro (license-"
+"gated)."
+msgstr ""
+
+#: includes/pro/class-ewqc-pro.php:33
+msgid "Multiple Agents"
+msgstr ""
+
+#: includes/pro/class-ewqc-agents.php:63
+msgid "Multiple Agents (Pro)"
+msgstr ""
+
+#: includes/class-ewqc-settings.php:244
+msgid "Multiple agents with round-robin"
+msgstr ""
+
+#: includes/pro/class-ewqc-agents.php:67
+msgid "Name"
+msgstr ""
+
+#: includes/class-ewqc-license.php:312
+msgid "Network error when contacting license server:"
+msgstr ""
+
+#: includes/pro/class-ewqc-agents.php:81
+msgid "No agents added yet. Click \"Add Agent\" to get started."
+msgstr ""
+
+#: includes/class-ewqc-settings.php:267
+msgid "Or with custom parameters:"
+msgstr ""
+
+#: includes/pro/class-ewqc-agents.php:69
+msgid "Phone"
+msgstr ""
+
+#: includes/class-ewqc-license.php:297
+msgid "Please enter a license key."
+msgstr ""
+
+#: includes/class-ewqc-settings.php:74
+msgid "Pre-filled message when chat opens"
+msgstr ""
+
+#: includes/class-ewqc-settings.php:236
+msgid "Pro Features"
+msgstr ""
+
+#. Author of the plugin
+msgid "Raihan Reza"
+msgstr ""
+
+#: includes/pro/class-ewqc-agents.php:116
+msgid "Remove"
+msgstr ""
+
+#: includes/class-ewqc-settings.php:36 includes/class-ewqc-settings.php:37
+msgid "Settings"
+msgstr ""
+
+#: includes/class-ewqc-settings.php:97
+msgid "Show Floating Button"
+msgstr ""
+
+#: includes/class-ewqc-settings.php:92
+msgid "Show on Mobile Only"
+msgstr ""
+
+#: includes/class-ewqc-license.php:74
+msgid "Status"
+msgstr ""
+
+#: includes/class-ewqc-settings.php:79
+msgid "Text to display on the button"
+msgstr ""
+
+#: includes/class-ewqc-license.php:88
+msgid ""
+"This page uses a remote license server to validate your Pro key. The plugin "
+"also checks license status hourly via WP-Cron."
+msgstr ""
+
+#: includes/pro/class-ewqc-agents.php:68
+msgid "Title"
+msgstr ""
+
+#: includes/class-ewqc-settings.php:222
+msgid "to unlock premium features."
+msgstr ""
+
+#: includes/pro/class-ewqc-analytics.php:85
+msgid "Today's Clicks"
+msgstr ""
+
+#: includes/class-ewqc-settings.php:88
+msgid "Top Left"
+msgstr ""
+
+#: includes/class-ewqc-settings.php:87
+msgid "Top Right"
+msgstr ""
+
+#: includes/pro/class-ewqc-analytics.php:81
+msgid "Total Clicks"
+msgstr ""
+
+#: includes/pro/class-ewqc-pro.php:40
+msgid "Track clicks, conversions, and user behavior"
+msgstr ""
+
+#: includes/class-ewqc-settings.php:241
+msgid "Unlock Pro Features"
+msgstr ""
+
+#: includes/class-ewqc-settings.php:265
+msgid "Use the shortcode anywhere in your content:"
+msgstr ""
+
+#: includes/class-ewqc-settings.php:26
+msgid "WhatsApp Chat"
+msgstr ""
+
+#: includes/class-ewqc-settings.php:67
+msgid "WhatsApp Number"
+msgstr ""
+
+#: includes/class-ewqc-settings.php:25
+msgid "WhatsApp Quick Chat"
+msgstr ""
+
+#: includes/class-ewqc-license.php:44
+msgid "WhatsApp Quick Chat License"
+msgstr ""
+
+#: includes/class-ewqc-license.php:43
+msgid "WhatsApp Quick Chat â€” License"
+msgstr ""
+
+#: includes/class-ewqc-settings.php:218
+msgid "You are using the free version."
+msgstr ""
+
+#: includes/class-ewqc-license.php:56
+msgid "You do not have permission to access this page."
+msgstr ""

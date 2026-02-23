@@ -1,0 +1,57 @@
+/* Colorful frontend styles */
+:root{--primary:#21BECA;--accent:#8E44AD;--safe:#0b8a3a;--moderate:#f4c542;--concerning:#f08a24;--danger:#c0392b}
+body {background: linear-gradient(180deg, #fafcff 0%, #ffffff 100%);}
+.psych-wrapper{max-width:1200px;margin:32px auto;font-family:Inter, "Helvetica Neue", Arial, sans-serif;color:#333;padding:28px;background:linear-gradient(180deg,#ffffff, #fbfdff);border-radius:14px;box-shadow:0 12px 40px rgba(34,50,80,0.06)}
+.psych-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.psych-header h2{margin:0;font-size:26px;color:#6f7980}
+.psych-progress{display:flex;gap:8px;margin:10px 0 20px}
+.step-dot{width:36px;height:36px;border-radius:50%;background:#f2f4f6;display:flex;align-items:center;justify-content:center;color:#889096;font-weight:700;box-shadow:inset 0 -4px 8px rgba(0,0,0,0.03)}
+.step-dot.active{background:var(--primary);color:#fff;box-shadow:0 8px 24px rgba(33,190,202,0.18)}
+.step{margin-top:10px}
+.question{padding:20px 0;border-bottom:1px solid #f3f3f3}
+.qtext{font-weight:700;color:#9aa0a6;margin-bottom:16px;font-size:18px}
+.radios{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.circle{border-radius:50%;border:4px solid var(--primary);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;position:relative;box-sizing:border-box;transition:all .16s ease;background:transparent;}
+.circle .inner-circle{width:36%;height:36%;border-radius:50%;display:block;box-shadow:inset 0 0 0 1px rgba(0,0,0,0.05)}
+.circle .tick{width:28px;height:28px;display:none;position:absolute;pointer-events:none}
+.circle.selected{background:var(--primary);border-color:var(--primary);box-shadow:0 10px 30px rgba(33,190,202,0.18)}
+.circle.selected .tick{display:block}
+/* sizes pattern */
+.circle[data-value="1"], .circle[data-value="7"]{width:96px;height:96px}
+.circle[data-value="2"], .circle[data-value="6"]{width:80px;height:80px}
+.circle[data-value="3"], .circle[data-value="5"]{width:64px;height:64px}
+.circle[data-value="4"]{width:48px;height:48px}
+/* disagree inner gradients */
+.circle[data-value="5"] .inner-circle{background:linear-gradient(180deg,#fff6e6,#ffe9c8)}
+.circle[data-value="6"] .inner-circle{background:linear-gradient(180deg,#ffece8,#ffd0c4)}
+.circle[data-value="7"] .inner-circle{background:linear-gradient(180deg,#ffdfdf,#b71c1c);border:1px solid rgba(0,0,0,0.06)}
+
+/* nav buttons */
+.btn{padding:10px 20px;border-radius:10px;border:0;cursor:pointer;background:var(--primary);color:#fff;margin:8px;font-weight:700;box-shadow:0 8px 20px rgba(33,190,202,0.12)}
+.btn.back{background:#95a5a6}
+.nav{display:flex;justify-content:flex-end;margin-top:22px}
+.blur{opacity:0.36;pointer-events:none;filter:blur(0.3px)}
+
+/* candidate info */
+.candidate-info{margin-top:18px;padding:14px;background:linear-gradient(180deg,#fbfdff,#ffffff);border-radius:10px;border:1px solid #f0f5f7}
+.candidate-info label{display:block;margin:10px 0;color:#6b6b6b}
+.candidate-info input{padding:12px;width:100%;max-width:420px;border:1px solid #eef3f5;border-radius:8px}
+
+/* result box */
+.result{padding:22px;border-radius:12px;text-align:center}
+.result h3{font-size:20px;margin-bottom:8px}
+
+/* admin submissions table */
+.psych-submissions-wrap{max-width:1200px;margin:20px auto}
+.psych-table{width:100%;border-collapse:collapse;font-family:Inter, Arial;margin-top:12px;border-radius:12px;overflow:hidden;box-shadow:0 12px 36px rgba(20,30,60,0.04)}
+.psych-table th, .psych-table td{padding:12px;border-bottom:1px solid #f2f6f8;text-align:left;background:#fff}
+.psych-table thead th{background:linear-gradient(90deg,#ffffff,#f7fbfb);color:#4b5a63;font-weight:700}
+.psych-table tr:nth-child(odd) td{background:#fcfeff}
+.risk-td{font-weight:700}
+.risk-safe{color:var(--safe);background:rgba(11,138,58,0.06);padding:6px 10px;border-radius:6px}
+.risk-moderate{color:#b58900;background:rgba(245,199,71,0.06);padding:6px 10px;border-radius:6px}
+.risk-concerning{color:#d35400;background:rgba(240,138,36,0.06);padding:6px 10px;border-radius:6px}
+.risk-danger{color:#a31616;background:rgba(195,53,53,0.06);padding:6px 10px;border-radius:6px}
+
+/* modal */
+.psych-modal{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);background:#fff;padding:18px;border:1px solid #eee;box-shadow:0 30px 90px rgba(0,0,0,0.18);z-index:9999;border-radius:12px;min-width:340px}

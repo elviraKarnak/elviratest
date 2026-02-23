@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./assets/css/main-style.css" />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+      <section class="banner_hero">
+        <img src="./assets/images/hero-banner.webp" alt="hero-banner" />
+      </section>
+      <section class="main_searched_wrapper">
+        <div class="container">
+          <div class="search_field_wrapper">
+            <form action="./searchScreen.html" class="search_form">
+              <input type="text" placeholder="Search" id="search_field" required/>
+              <input type="submit" id="search_btn" value="Search" />
+            </form>
+            <div class="filter_wrapper">
+              <button type="button" class="filter_btn">Advanced Search</button>
+              <div class="filer_option">
+                <p class="heading">Advanced Search</p>
+                <p class="description">Find based on a specific type</p>
+                <div class="options_wrap">
+                  <button class="option open_popup" data-id="find_artist">
+                    <div>
+                      <div class="img_wrap">
+                        <img
+                          src="./assets/images/artist-blue-icon.svg"
+                          alt="artist-icon"
+                        />
+                      </div>
+                      <p class="title">Artist</p>
+                    </div>
+                    <div>
+                      <img src="./assets/images/arrow-blue.svg" alt="" />
+                    </div>
+                  </button>
+                  <button class="option open_popup" data-id="find_band">
+                    <div>
+                      <img
+                        src="./assets/images/band-icon.svg"
+                        alt="band-icon"
+                      />
+                      <p class="title">Band</p>
+                    </div>
+                    <div>
+                      <img src="./assets/images/arrow-blue.svg" alt="arrow" />
+                    </div>
+                  </button>
+                  <button class="option open_popup" data-id="find_musician">
+                    <div>
+                      <img
+                        src="./assets/images/musician-icon.svg"
+                        alt="musician-icon"
+                      />
+                      <p class="title">Musician</p>
+                    </div>
+                    <div>
+                      <img src="./assets/images/arrow-blue.svg" alt="arrow" />
+                    </div>
+                  </button>
+                  <button class="option open_popup" data-id="find_track">
+                    <div>
+                      <img
+                        src="./assets/images/track-icon.svg"
+                        alt="track-icon"
+                      />
+                      <p class="title">Track</p>
+                    </div>
+                    <div>
+                      <img src="./assets/images/arrow-blue.svg" alt="arrow" />
+                    </div>
+                  </button>
+                  <button class="option open_popup" data-id="find_obj">
+                    <div>
+                      <img
+                        src="./assets/images/object-icon.svg"
+                        alt="object-icon"
+                      />
+                      <p class="title">Object</p>
+                    </div>
+                    <div>
+                      <img src="./assets/images/arrow-blue.svg" alt="arrow" />
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="custom_popup">
+        <div class="custom_popup_wrapper">
+          <div class="inner_wrapper active" id="find_artist">
+            <div class="popup_head">
+              <img
+                src="./assets/images/artist-icon-white.svg"
+                alt="artist-icon-white"
+                class="p_logo"
+              />
+              <h4 class="title">Find Artist</h4>
+              <button class="cross_btn">Close</button>
+            </div>
+            <div class="popup_body">
+              <form action="#" class="form_wrapper">
+                <!-- Left column -->
+                <div class="form_col_left">
+                  <div class="field_group">
+                    <label>First/Stage Name:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Last Name: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label></label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label></label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label></label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label></label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                </div>
+                <div class="field_group concent_field">
+                  <label for="concent">Includes Multimedia?</label>
+                  <input
+                    type="checkbox"
+                    name="concent"
+                    id="concent"
+                    class="concent"
+                  />
+                </div>
+                <div class="submit_btn_wrap">
+                  <input
+                    type="submit"
+                    value="Find"
+                    class="primary_submit_btn"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="inner_wrapper" id="find_band">
+            <div class="popup_head">
+              <img
+                src="./assets/images/band-icon-white.svg"
+                alt="band-icon-white"
+                class="p_logo"
+              />
+              <h4 class="title">Find Band</h4>
+              <button class="cross_btn">Close</button>
+            </div>
+            <div class="popup_body">
+              <form action="#" class="form_wrapper">
+                <!-- Left column -->
+                <div class="form_col_left">
+                  <div class="field_group">
+                    <label>Band Name</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label></label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="field_group concent_field">
+                  <label for="concent">Includes Multimedia?</label>
+                  <input
+                    type="checkbox"
+                    name="concent"
+                    id="concent"
+                    class="concent"
+                  />
+                </div>
+                <div class="submit_btn_wrap">
+                  <input
+                    type="submit"
+                    value="Find"
+                    class="primary_submit_btn"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="inner_wrapper" id="find_musician">
+            <div class="popup_head">
+              <img
+                src="./assets/images/musician-icon-white.svg"
+                alt="musician-icon-white"
+                class="p_logo"
+              />
+              <h4 class="title">Find Musician</h4>
+              <button class="cross_btn">Close</button>
+            </div>
+            <div class="popup_body">
+              <form action="#" class="form_wrapper">
+                <!-- Left column -->
+                <div class="form_col_left">
+                  <div class="field_group">
+                    <label>Track No:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Track Name:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="field_group">
+                    <label>Artist Name: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="field_group">
+                    <label>Instruments(s):</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                </div>
+                <div class="form_col_right">
+                  <div class="field_group">
+                    <label>Object No:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Band Name: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="field_group">
+                    <label>Album Name:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                </div>
+                <div class="submit_btn_wrap">
+                  <input
+                    type="submit"
+                    value="Find"
+                    class="primary_submit_btn"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="inner_wrapper" id="find_track">
+            <div class="popup_head">
+              <img
+                src="./assets/images/track-icon-white.svg"
+                alt="track-icon-white"
+                class="p_logo"
+              />
+              <h4 class="title">Find Track</h4>
+              <button class="cross_btn">Close</button>
+            </div>
+            <div class="popup_body">
+              <form action="#" class="form_wrapper">
+                <!-- Left column -->
+                <div class="form_col_left">
+                  <div class="field_group">
+                    <label>Track No:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Track Name:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="field_group">
+                    <label>Artist Name: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="field_group">
+                    <label>Instruments(s):</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                </div>
+                <div class="form_col_right">
+                  <div class="field_group">
+                    <label>Object No:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Band Name: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="field_group">
+                    <label>Album Name:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                </div>
+                <div class="submit_btn_wrap">
+                  <input
+                    type="submit"
+                    value="Find"
+                    class="primary_submit_btn"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="inner_wrapper" id="find_obj">
+            <div class="topbar_wrapper">
+            <div class="topbar_for_objects">
+              <div class="field_group">
+                <label>
+                  <input type="radio" name="objects_sel" data-target="any" checked/>
+                  Any
+                </label>
+              </div>
+              <div class="field_group">
+                <label>
+                  <input type="radio" name="objects_sel" data-target="ephemera" />
+                  Ephemera
+                </label>
+              </div>
+              <div class="field_group">
+                <label>
+                  <input type="radio" name="objects_sel" data-target="image" />
+                  Image
+                </label>
+              </div>
+              <div class="field_group">
+                <label>
+                  <input type="radio" name="objects_sel" data-target="instrument" />
+                  Instrument
+                </label>
+              </div>
+              <div class="field_group">
+                <label>
+                  <input type="radio" name="objects_sel" data-target="interview" />
+                  Interview
+                </label>
+              </div>
+              <div class="field_group">
+                <label>
+                  <input type="radio" name="objects_sel" data-target="music" />
+                  Music
+                </label>
+              </div>
+              <div class="field_group">
+                <label>
+                  <input type="radio" name="objects_sel" data-target="printed" />
+                  Printed Material
+                </label>
+              </div>
+              <div class="field_group">
+                <label>
+                  <input type="radio" name="objects_sel" data-target="video" />
+                  Video
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="popup_head">
+            <img
+              src="./assets/images/object-icon-white.svg"
+              alt="object-icon-white"
+              class="p_logo"
+            />
+            <h4 class="title">Find Object</h4>
+            <button class="cross_btn">Close</button>
+          </div>
+          <div class="popup_body object_tab_form">
+            <div class="object_form_wrapper active" id="any">
+              <form action="#" class="form_wrapper">
+                <!-- Left column -->
+                <div class="form_col_left">
+                  <div class="field_group">
+                    <label>Object No:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Where: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>When: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Notes:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                </div>
+                <!-- Right column -->
+                <div class="form_col_right">
+                  <div class="field_group">
+                    <label>What:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Who: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Description:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                </div>
+                <div class="field_group concent_field">
+                  <label for="concent">Includes Multimedia?</label>
+                  <input
+                    type="checkbox"
+                    name="concent"
+                    id="concent"
+                    class="concent"
+                  />
+                </div>
+                <div class="submit_btn_wrap">
+                  <input type="submit" value="Find" class="primary_submit_btn" />
+                </div>
+              </form>
+            </div>
+            <div class="object_form_wrapper" id="ephemera">
+              <form action="#" class="form_wrapper">
+                <!-- Left column -->
+                <div class="form_col_left">
+                  <div class="field_group">
+                    <label>Title: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Date: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Band/Person: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Collection Group:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Era:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="field_group">
+                    <label>Notes:</label>
+                    <div class="field_input">
+                      <textarea name="notes"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <!-- Right column -->
+                <div class="form_col_right">
+                  <div class="field_group">
+                    <label>Object No:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Manufacturer: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>N/A:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Special Collection:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Ephemera Type:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="field_group">
+                    <label>Where Made:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                </div>
+                <div class="next_btn_wrap">
+                  <button class="next_btn">Next</button>
+                </div>
+                <div class="submit_btn_wrap">
+                  <input type="submit" value="Find" class="primary_submit_btn" />
+                </div>
+              </form>
+            </div>
+            <div class="object_form_wrapper" id="image">
+              <form action="#" class="form_wrapper">
+                <!-- Left column -->
+                <div class="form_col_left">
+                  <div class="field_group">
+                    <label>Title: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Creation Date: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Creator/Photographer: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Collection Group:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Era:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="field_group">
+                    <label>Notes:</label>
+                    <div class="field_input">
+                      <textarea name="notes"></textarea>
+                    </div>
+                  </div>
+                  <div class="field_group radio">
+                    <label>NotesColour/B&W</label>
+                    <div class="field_input">
+                      <input type="radio" name="radio_inp" id="color" />
+                      <label for="color">Color</label>
+                    </div>
+                    <div class="field_input">
+                      <input type="radio" name="radio_inp" id="b&w" />
+                      <label for="b&w">B&W</label>
+                    </div>
+                  </div>
+                </div>
+                <!-- Right column -->
+                <div class="form_col_right">
+                  <div class="field_group">
+                    <label>Object No:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Band/Person: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>N/A:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Special Collection:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Image Type:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="field_group">
+                    <label>Image Sub Type:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="field_group">
+                    <label>Creation Location:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                </div>
+                <div class="next_btn_wrap">
+                  <button class="next_btn">Next</button>
+                </div>
+                <div class="submit_btn_wrap">
+                  <input type="submit" value="Find" class="primary_submit_btn" />
+                </div>
+              </form>
+            </div>
+            <div class="object_form_wrapper" id="instrument">
+              <form action="#" class="form_wrapper">
+                <!-- Left column -->
+                <div class="form_col_left">
+                  <div class="field_group">
+                    <label>Title: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Manufacturer Date: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Band/Person: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Collection Group:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Era:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="field_group">
+                    <label>Notes:</label>
+                    <div class="field_input">
+                      <textarea name="notes"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <!-- Right column -->
+                <div class="form_col_right">
+                  <div class="field_group">
+                    <label>Object No:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Manufacturer: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>N/A:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Special Collection:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Instrument Type:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                </div>
+                <div class="next_btn_wrap">
+                  <button class="next_btn">Next</button>
+                </div>
+                <div class="submit_btn_wrap">
+                  <input type="submit" value="Find" class="primary_submit_btn" />
+                </div>
+              </form>
+            </div>
+            <div class="object_form_wrapper" id="interview">
+              <form action="#" class="form_wrapper">
+                <!-- Left column -->
+                <div class="form_col_left">
+                  <div class="field_group">
+                    <label>Title: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Date: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Interviewer: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Collection Group:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Era:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="field_group">
+                    <label>Notes:</label>
+                    <div class="field_input">
+                      <textarea name="notes"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <!-- Right column -->
+                <div class="form_col_right">
+                  <div class="field_group">
+                    <label>Object No:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Interviewee: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>N/A:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Special Collection:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>InterviewType:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                </div>
+                <div class="next_btn_wrap">
+                  <button class="next_btn">Next</button>
+                </div>
+                <div class="submit_btn_wrap">
+                  <input type="submit" value="Find" class="primary_submit_btn" />
+                </div>
+              </form>
+            </div>
+            <div class="object_form_wrapper" id="music">
+              <form action="#" class="form_wrapper">
+                <!-- Left column -->
+                <div class="form_col_left">
+                  <div class="field_group">
+                    <label>Title: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Recorded Date: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Music Publisher: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Collection Group:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Era:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                </div>
+                <!-- Right column -->
+                <div class="form_col_right">
+                  <div class="field_group">
+                    <label>Object No:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Band: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>N/A:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Special Collection:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Notes:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                </div>
+                <div class="next_btn_wrap">
+                  <button class="next_btn">Next</button>
+                </div>
+                <div class="additional_info_form_wrap">
+                  <div class="additional_info">
+                    <div class="head_cont">
+                      <div class="left">
+                        <p>Additional Info</p>
+                      </div>
+                      <div class="right"></div>
+                    </div>
+                    <div class="body_cont form_wrapper">
+                      <div class="form_col_left">
+                        <div class="field_group">
+                          <label>Music Type:</label>
+                          <div class="field_input">
+                            <input type="text" />
+                          </div>
+                        </div>
+                        <div class="field_group">
+                          <label>Music Type:</label>
+                          <div class="field_input">
+                            <input type="text" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form_col_right">
+                        <div class="field_group">
+                          <label>Description:</label>
+                          <div class="field_input">
+                            <input type="text" />
+                          </div>
+                        </div>
+                        <div class="field_group">
+                          <label>Description:</label>
+                          <div class="field_input">
+                            <input type="text" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="submit_btn_wrap">
+                  <input type="submit" value="Find" class="primary_submit_btn" />
+                </div>
+              </form>
+            </div>
+            <div class="object_form_wrapper" id="printed">
+              <form action="#" class="form_wrapper">
+                <!-- Left column -->
+                <div class="form_col_left">
+                  <div class="field_group">
+                    <label>Title: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Date: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Author: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Collection Group:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Era:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="field_group">
+                    <label>Material Type:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="field_group">
+                    <label>Cover Type:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                  
+                </div>
+                <!-- Right column -->
+                <div class="form_col_right">
+                  <div class="field_group">
+                    <label>Object No:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Band/Person: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Publisher:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Special Collection:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Notes:</label>
+                    <div class="field_input">
+                      <textarea name="notes"></textarea>
+                    </div>
+                  </div>
+                  <div class="field_group">
+                    <label>Material Sub Type:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="field_group">
+                    <label>Publishing Type:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                </div>
+                <div class="next_btn_wrap">
+                  <button class="next_btn">Next</button>
+                </div>
+                <div class="submit_btn_wrap">
+                  <input type="submit" value="Find" class="primary_submit_btn" />
+                </div>
+              </form>
+            </div>
+            <div class="object_form_wrapper" id="video">
+              <form action="#" class="form_wrapper">
+                <!-- Left column -->
+                <div class="form_col_left">
+                  <div class="field_group">
+                    <label>Title: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Recorded Date: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Publisher: </label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Collection Group:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Era:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="field_group">
+                    <label>Notes:</label>
+                    <div class="field_input">
+                      <textarea name="notes"></textarea>
+                    </div>
+                  </div>
+                  <div class="field_group radio">
+                    <label>Stereo/Mono</label>
+                    <div class="field_input">
+                      <input type="radio" name="radio_inp" id="stereo" />
+                      <label for="stereo">Stereo</label>
+                    </div>
+                    <div class="field_input">
+                      <input type="radio" name="radio_inp" id="mono" />
+                      <label for="mono">Mono&W</label>
+                    </div>
+                  </div>
+                </div>
+                <!-- Right column -->
+                <div class="form_col_right">
+                  <div class="field_group">
+                    <label>Object No:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Band/Event:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>N/A:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Special Collection:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field_group">
+                    <label>Video Type:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="field_group">
+                    <label>Media Type:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="field_group">
+                    <label>Where Recorded:</label>
+                    <div class="field_input">
+                      <input type="text" />
+                    </div>
+                  </div>
+                </div>
+                <div class="next_btn_wrap">
+                  <button class="next_btn">Next</button>
+                </div>
+                <div class="submit_btn_wrap">
+                  <input type="submit" value="Find" class="primary_submit_btn" />
+                </div>
+              </form>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./assets/js/function.js"></script>
+    <script>
+      // popup form changes js
+      const popupFormBtn = document.querySelectorAll(".filter_wrapper .option");
+      popupFormBtn.forEach((elem) => {
+        elem.addEventListener("click", function () {
+          popupFormBtn.forEach((btn) => btn.classList.remove("active"));
+
+          this.classList.add("active");
+          let dataId = this.getAttribute("data-id");
+          // alert(dataId);
+
+          let dataPopup = document.querySelector("#" + dataId);
+          let dataPopupActive = document.querySelectorAll(
+            ".custom_popup_wrapper .inner_wrapper"
+          );
+          dataPopupActive.forEach((el) => {
+            el.classList.remove("active");
+          });
+          // alert(dataPopup);
+          dataPopup.classList.add("active");
+        });
+      });
+
+      // object form changes according to radio js
+      const radios = document.querySelectorAll('input[name="objects_sel"]');
+      const contents = document.querySelectorAll('.object_form_wrapper');
+
+      radios.forEach(radio => {
+        radio.addEventListener('change', function () {
+          const target = this.dataset.target;
+
+          contents.forEach(content => {
+            content.classList.remove('active');
+          });
+
+          document.getElementById(target).classList.add('active');
+        });
+      });
+    </script>
+  </body>
+</html>

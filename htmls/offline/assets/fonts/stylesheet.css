@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Avenir Arabic';
+    src: url('AvenirArabic-Black.woff2') format('woff2'),
+        url('AvenirArabic-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Arabic';
+    src: url('AvenirArabic-Light.woff2') format('woff2'),
+        url('AvenirArabic-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Arabic';
+    src: url('AvenirArabic-Heavy.woff2') format('woff2'),
+        url('AvenirArabic-Heavy.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Arabic';
+    src: url('AvenirArabic-Medium.woff2') format('woff2'),
+        url('AvenirArabic-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

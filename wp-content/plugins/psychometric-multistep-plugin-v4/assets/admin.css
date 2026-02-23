@@ -1,0 +1,7 @@
+/* Admin GUI styles */
+.psy-step-card{margin-bottom:18px;padding:12px;border:1px solid #eee;border-radius:10px;background:#fff;box-shadow:0 6px 20px rgba(0,0,0,0.03)}
+.psy-step-header{display:flex;justify-content:space-between;align-items:center;padding-bottom:8px}
+.psy-step-header .step-controls button{margin-left:6px}
+.psy-q-row{display:flex;gap:8px;align-items:center;padding:6px 0}
+.psy-q-row input.q-text{padding:8px;border:1px solid #ddd;border-radius:6px}
+.button-primary{background:#21BECA;border-color:#21BECA;color:#fff}

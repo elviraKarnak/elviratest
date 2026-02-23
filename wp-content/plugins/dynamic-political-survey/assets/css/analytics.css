@@ -1,0 +1,618 @@
+/**
+ * Analytics Dashboard Styles - Redesigned Layout
+ * Filters at Top, Results at Bottom
+ */
+
+/* ========================================
+   ANALYTICS PAGE LAYOUT
+   ======================================== */
+
+.dps-analytics-page {
+    background: #f5f7fa;
+    padding: 30px;
+    margin: -10px -20px;
+}
+
+.dps-analytics-page > h1 {
+    font-size: 36px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+}
+
+.dps-analytics-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* ========================================
+   FILTERS SECTION - AT TOP
+   ======================================== */
+
+.dps-filters-section {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    padding: 35px;
+}
+
+.dps-filters-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #f3f4f6;
+}
+
+.dps-filters-header h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dps-filters-header h2::before {
+    content: "🔍";
+    font-size: 28px;
+}
+
+/* ========================================
+   FILTER GRID LAYOUT
+   ======================================== */
+
+.dps-filters-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.dps-filter-box {
+    background: linear-gradient(135deg, #fafbfc 0%, #f9f9fb 100%);
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid #e5e7eb;
+    transition: all 0.3s;
+}
+
+.dps-filter-box:hover {
+    border-color: #667eea;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.1);
+}
+
+.dps-filter-box h3 {
+    margin: 0 0 15px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #1f2937;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-group {
+    margin-bottom: 15px;
+}
+
+.filter-group:last-child {
+    margin-bottom: 0;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #4b5563;
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    font-size: 15px;
+    background: white;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.filter-group select:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+}
+
+/* ========================================
+   CHECKBOX FILTERS
+   ======================================== */
+
+.dps-checkbox-filters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.checkbox-filter-group {
+    background: linear-gradient(135deg, #fafbfc 0%, #f9f9fb 100%);
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid #e5e7eb;
+}
+
+.checkbox-filter-group h4 {
+    margin: 0 0 12px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #1f2937;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.checkbox-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.checkbox-list label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4b5563;
+}
+
+.checkbox-list label:hover {
+    background: #f3f4f6;
+    transform: translateX(3px);
+}
+
+.checkbox-list input[type="checkbox"] {
+    margin: 0;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.checkbox-list input[type="checkbox"]:checked + span {
+    color: #667eea;
+    font-weight: 700;
+}
+
+/* ========================================
+   CHART TYPE & QUESTION SELECTION
+   ======================================== */
+
+.dps-selection-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.question-select-box,
+.chart-type-box {
+    background: linear-gradient(135deg, #fafbfc 0%, #f9f9fb 100%);
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid #e5e7eb;
+}
+
+.question-select-box h3,
+.chart-type-box h3 {
+    margin: 0 0 15px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #1f2937;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.chart-type-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.chart-option {
+    padding: 20px;
+    background: white;
+    border: 3px solid #e5e7eb;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.chart-option:hover {
+    border-color: #c7d2fe;
+    transform: translateY(-3px);
+}
+
+.chart-option.active {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-color: #667eea;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+.chart-option input {
+    display: none;
+}
+
+.chart-option .dashicons {
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 8px;
+}
+
+.chart-option span {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* ========================================
+   ACTION BUTTONS
+   ======================================== */
+
+.dps-filter-actions {
+    display: flex;
+    gap: 15px;
+    padding-top: 20px;
+    border-top: 2px solid #f3f4f6;
+}
+
+.dps-filter-actions button {
+    flex: 1;
+    padding: 18px;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+}
+
+#generate-analytics-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+#generate-analytics-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(102, 126, 234, 0.4);
+}
+
+#reset-filters-btn {
+    background: white;
+    color: #4b5563;
+    border: 2px solid #e5e7eb !important;
+}
+
+#reset-filters-btn:hover {
+    background: #f9fafb;
+    border-color: #9ca3af !important;
+}
+
+/* ========================================
+   ACTIVE FILTERS DISPLAY
+   ======================================== */
+
+.selected-filters-display {
+    background: linear-gradient(135deg, #e0e7ff 0%, #dbeafe 100%);
+    padding: 20px 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    border-left: 5px solid #667eea;
+}
+
+.selected-filters-display h4 {
+    margin: 0 0 12px;
+    font-size: 13px;
+    color: #4338ca;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.active-filters-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* ========================================
+   RESULTS SECTION - AT BOTTOM
+   ======================================== */
+
+.dps-results-section {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    padding: 35px;
+}
+
+.dps-results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #f3f4f6;
+}
+
+.dps-results-header h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.dps-export-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.dps-export-buttons button {
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 2px solid #e5e7eb;
+    background: white;
+    color: #4b5563;
+}
+
+.dps-export-buttons button:hover {
+    border-color: #667eea;
+    color: #667eea;
+    background: #f9fafb;
+}
+
+/* ========================================
+   NO DATA STATE
+   ======================================== */
+
+.dps-no-data {
+    text-align: center;
+    padding: 100px 40px;
+}
+
+.dps-no-data-icon {
+    font-size: 100px;
+    margin-bottom: 25px;
+    opacity: 0.2;
+}
+
+.dps-no-data h3 {
+    color: #6b7280;
+    margin-bottom: 15px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.dps-no-data p {
+    font-size: 16px;
+    color: #9ca3af;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* ========================================
+   STATS CARDS
+   ======================================== */
+
+.dps-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.dps-stat-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(102, 126, 234, 0.25);
+    animation: fadeInUp 0.6s ease;
+}
+
+.stat-value {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.stat-label {
+    font-size: 14px;
+    opacity: 0.95;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ========================================
+   CHART CONTAINER
+   ======================================== */
+
+.dps-chart-container {
+    position: relative;
+    height: 550px;
+    margin-bottom: 40px;
+    padding: 30px;
+    background: linear-gradient(135deg, #fafbfc 0%, #f9f9fb 100%);
+    border-radius: 20px;
+    border: 2px solid #e5e7eb;
+}
+
+/* ========================================
+   DATA TABLE
+   ======================================== */
+
+.dps-data-table-container {
+    margin-top: 40px;
+}
+
+.dps-data-table-container h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+#analytics-table {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+#analytics-table thead {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+#analytics-table thead th {
+    color: white;
+    font-weight: 700;
+    padding: 18px;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+#analytics-table tbody tr {
+    transition: all 0.3s;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+#analytics-table tbody tr:hover {
+    background: #f9fafb;
+}
+
+#analytics-table tbody td {
+    padding: 18px;
+    font-size: 15px;
+}
+
+#analytics-table tbody td:first-child {
+    font-weight: 700;
+    color: #1f2937;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 1400px) {
+    .dps-filters-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    .dps-filters-grid,
+    .dps-selection-row,
+    .dps-checkbox-filters {
+        grid-template-columns: 1fr;
+    }
+    
+    .dps-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .dps-analytics-page {
+        padding: 20px 15px;
+    }
+    
+    .dps-filters-section,
+    .dps-results-section {
+        padding: 25px 20px;
+    }
+    
+    .dps-stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .dps-filter-actions {
+        flex-direction: column;
+    }
+    
+    .dps-results-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .dps-export-buttons {
+        width: 100%;
+    }
+    
+    .dps-export-buttons button {
+        flex: 1;
+    }
+}
+
+/* ========================================
+   ANIMATIONS
+   ======================================== */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dps-stat-card:nth-child(1) { animation-delay: 0.1s; }
+.dps-stat-card:nth-child(2) { animation-delay: 0.2s; }
+.dps-stat-card:nth-child(3) { animation-delay: 0.3s; }
+.dps-stat-card:nth-child(4) { animation-delay: 0.4s; }

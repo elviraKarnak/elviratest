@@ -1,0 +1,492 @@
+/**
+ * Survey Form Styles
+ * Frontend multi-step survey form
+ */
+
+/* ========================================
+   SURVEY WRAPPER
+   ======================================== */
+
+.dps-survey-wrapper {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.dps-survey-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.dps-survey-title {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.dps-survey-description {
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+/* ========================================
+   PROGRESS BAR
+   ======================================== */
+
+.dps-progress-container {
+    margin-bottom: 40px;
+}
+
+.dps-progress-bar {
+    height: 8px;
+    background: #ecf0f1;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.dps-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    transition: width 0.3s ease;
+}
+
+.dps-progress-text {
+    text-align: center;
+    font-size: 14px;
+    color: #7f8c8d;
+    font-weight: 600;
+}
+
+/* ========================================
+   STEP CONTAINER
+   ======================================== */
+
+.dps-step {
+    display: none;
+}
+
+.dps-step.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(10px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+.dps-step-header {
+    margin-bottom: 30px;
+}
+
+.dps-step-title {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.dps-step-description {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+/* ========================================
+   QUESTIONS
+   ======================================== */
+
+.dps-question {
+    margin-bottom: 30px;
+}
+
+.dps-question-label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 12px;
+}
+
+.question-code {
+    color: #667eea;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.required {
+    color: #e74c3c;
+    margin-left: 3px;
+}
+
+/* ========================================
+   RADIO GROUPS
+   ======================================== */
+
+.dps-radio-group,
+.dps-checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.dps-radio-option,
+.dps-checkbox-option {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.dps-radio-option:hover,
+.dps-checkbox-option:hover {
+    background: #e9ecef;
+    border-color: #667eea;
+}
+
+.dps-radio-option input,
+.dps-checkbox-option input {
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+/* ========================================
+   INPUT FIELDS
+   ======================================== */
+
+.dps-select,
+.dps-text-input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.dps-select:focus,
+.dps-text-input:focus,
+.dps-textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.dps-textarea {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-family: inherit;
+    resize: vertical;
+}
+
+/* ========================================
+   NAVIGATION BUTTONS
+   ======================================== */
+
+.dps-step-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid #ecf0f1;
+}
+
+.dps-btn {
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.dps-btn-prev {
+    background: #ecf0f1;
+    color: #2c3e50;
+}
+
+.dps-btn-prev:hover {
+    background: #d5dbdb;
+}
+
+.dps-btn-next,
+.dps-btn-submit {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    margin-left: auto;
+}
+
+.dps-btn-next:hover,
+.dps-btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+/* ========================================
+   LOADING STATE
+   ======================================== */
+
+.dps-loading {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.dps-spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #667eea;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ========================================
+   ERROR STATES
+   ======================================== */
+
+.dps-error {
+    padding: 20px;
+    background: #fee;
+    color: #c33;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.error-message {
+    display: block;
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.step-error-message {
+    padding: 12px 16px;
+    background: #fee;
+    color: #c33;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+input.error,
+select.error,
+textarea.error {
+    border-color: #e74c3c !important;
+}
+
+.dps-question.error {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+/* ========================================
+   SUCCESS STATE
+   ======================================== */
+
+.dps-success {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.success-icon {
+    width: 80px;
+    height: 80px;
+    background: #27ae60;
+    color: #fff;
+    font-size: 50px;
+    line-height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    animation: scaleIn 0.5s ease;
+}
+
+@keyframes scaleIn {
+    0% { transform: scale(0); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.dps-success h3 {
+    font-size: 32px;
+    color: #27ae60;
+    margin-bottom: 15px;
+}
+
+.dps-success p {
+    font-size: 18px;
+    color: #7f8c8d;
+}
+
+/* ========================================
+   THANK YOU PAGE
+   ======================================== */
+
+.dps-thank-you-wrapper {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.dps-thank-you-content {
+    background: #fff;
+    padding: 60px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.dps-thank-you-content h2 {
+    font-size: 32px;
+    color: #27ae60;
+    margin-bottom: 20px;
+}
+
+.success-message {
+    font-size: 18px;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.thank-you-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.button {
+    padding: 14px 32px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.button-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border: none;
+}
+
+.button-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+/* ========================================
+   ALREADY SUBMITTED STATE
+   ======================================== */
+
+.dps-already-submitted {
+    padding: 40px 20px;
+    background: #fff;
+    border: 2px solid #f0f0f0;
+    border-radius: 12px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.dps-already-submitted h3 {
+    color: #27ae60;
+    margin-bottom: 10px;
+}
+
+.dps-already-submitted p {
+    color: #7f8c8d;
+    font-size: 16px;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 768px) {
+    .dps-survey-wrapper {
+        padding: 20px;
+        margin: 20px;
+    }
+    
+    .dps-survey-title {
+        font-size: 24px;
+    }
+    
+    .dps-step-navigation {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .dps-btn {
+        width: 100%;
+    }
+    
+    .dps-thank-you-content {
+        padding: 40px 20px;
+    }
+    
+    .dps-thank-you-content h2 {
+        font-size: 24px;
+    }
+    
+    .success-message {
+        font-size: 16px;
+    }
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+.dps-radio-option:focus-within,
+.dps-checkbox-option:focus-within {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+    .dps-progress-container,
+    .dps-step-navigation {
+        display: none;
+    }
+    
+    .dps-survey-wrapper {
+        box-shadow: none;
+        padding: 0;
+    }
+}

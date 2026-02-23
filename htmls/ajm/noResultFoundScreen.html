@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/main-style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="banner_hero">
+        <img src="./assets/images/hero-banner.webp" alt="hero-banner" />
+      </section>
+      <section class="main_searched_wrapper">
+        <div class="container">
+          <div class="search_field_wrapper">
+            <form action="#" class="search_form">
+              <input type="text" placeholder="Search" id="search_field" />
+              <input type="submit" id="search_btn" value="Search" />
+            </form>
+            <div class="filter_wrapper">
+              <button type="button" class="filter_btn">Advanced Search</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="custom_popup active no_result">
+        <div class="custom_popup_wrapper">
+          <div class="popup_head">
+            <button class="cross_btn">Close</button>
+          </div>
+          <div class="popup_body">
+            <h5 class="hdng">No Result Found</h5>
+            <p class="subhdng">We can't find any item matching your search. <br> Please try again.</p>
+            <button class="primary_submit_btn cross_btn">OK</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./assets/js/function.js"></script>
+  </body>
+</html>

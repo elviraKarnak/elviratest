@@ -1,0 +1,28 @@
+/* Simple modern styles for Interview Test */
+.it-app { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; max-width:900px; margin:20px auto; background:#fff; padding:20px; border-radius:8px; box-shadow:0 6px 20px rgba(0,0,0,0.08); }
+.it-progress { height:14px; background:#eee; border-radius:10px; position:relative; margin-bottom:12px; overflow:hidden; }
+.it-progress-bar { height:100%; width:0%; background:linear-gradient(90deg,var(--it-primary,#0077AC),var(--it-secondary,#FF9900)); transition:width .3s ease; }
+.it-progress-text { font-size:13px; margin-top:6px; color:#333; }
+.it-step { margin-bottom:12px; }
+.it-question { padding:12px; border:1px solid #f0f0f0; border-radius:6px; margin-bottom:10px; }
+.it-qtitle { font-weight:600; margin-bottom:8px; }
+.it-grid { display:flex; gap:8px; }
+.it-cell { flex:1; display:flex; align-items:center; justify-content:center; padding:10px; border-radius:6px; background:#fafafa; cursor:pointer; border:1px solid #eee; }
+.it-cell input{ display:none; }
+.it-cell:hover{ transform:translateY(-2px); }
+.it-cell .it-ctitle{ font-size:13px; }
+.it-cell input:checked + .it-ctitle{ font-weight:700; color:#fff; }
+/* when radio checked, style label via JS using :has if available fallback not reliable; so simple highlight on focus */
+.it-error{ box-shadow:0 0 0 3px rgba(255,0,0,0.06); border-color:#ffdddd; }
+.it-nav{ display:flex; gap:8px; justify-content:flex-end; margin-top:12px; }
+.it-nav button{ padding:8px 14px; border-radius:6px; border:0; cursor:pointer; background:#0077AC; color:#fff; }
+.it-nav .it-prev{ background:#666; }
+.it-final input{ width:100%; padding:8px; margin-top:4px; margin-bottom:8px; border-radius:6px; border:1px solid #ddd; }
+.it-thanks{ text-align:center; padding:30px; }
+@media (max-width:600px){ .it-grid { flex-direction:column; } }
+
+
+.it-cell.it-selected{ background: linear-gradient(90deg,var(--it-primary,#0077AC),var(--it-secondary,#FF9900)); color:#fff; border-color:rgba(0,0,0,0.06); }
+.it-nav button{ background:var(--it-primary,#0077AC); }
+.it-nav .it-prev{ background:var(--it-secondary,#FF9900); }
+.it-cell.it-selected .it-ctitle{ color:#fff; font-weight:700; }

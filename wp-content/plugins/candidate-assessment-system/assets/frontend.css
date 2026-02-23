@@ -1,0 +1,330 @@
+/* Frontend Assessment Form Styles */
+
+.cas-assessment-wrapper {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+.cas-assessment-container {
+    background: white;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+/* Progress Bar */
+.cas-progress-container {
+    margin-bottom: 40px;
+}
+
+.cas-progress-bar {
+    height: 12px;
+    background: #e5e7eb;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.cas-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--cas-primary), var(--cas-secondary));
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 20px;
+}
+
+.cas-progress-text {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #6b7280;
+}
+
+/* Questions */
+.cas-questions-wrapper {
+    min-height: 400px;
+}
+
+.cas-question-item {
+    margin-bottom: 32px;
+    opacity: 0;
+    animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cas-question-header {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.cas-question-number {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--cas-primary), var(--cas-secondary));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.cas-question-text {
+    flex: 1;
+    font-size: 18px;
+    font-weight: 600;
+    color: #111827;
+    line-height: 1.5;
+}
+
+/* Answer Options */
+.cas-answer-options {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+@media (max-width: 768px) {
+    .cas-answer-options {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cas-answer-option {
+    position: relative;
+}
+
+.cas-answer-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.cas-answer-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 12px;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: white;
+    text-align: center;
+}
+
+.cas-answer-label:hover {
+    border-color: var(--cas-primary);
+    background: #f9fafb;
+    transform: translateY(-2px);
+}
+
+.cas-answer-option input:checked + .cas-answer-label {
+    border-color: var(--cas-primary);
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), rgba(16, 185, 129, 0.1));
+    box-shadow: 0 8px 16px rgba(79, 70, 229, 0.2);
+}
+
+.cas-answer-icon {
+    font-size: 32px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.cas-answer-text {
+    font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+}
+
+/* Personal Info Form */
+.cas-personal-info {
+    animation: fadeInUp 0.5s;
+}
+
+.cas-personal-info h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 8px;
+    color: #111827;
+}
+
+.cas-info-subtitle {
+    color: #6b7280;
+    margin: 0 0 32px;
+}
+
+.cas-form-row {
+    margin-bottom: 24px;
+}
+
+.cas-form-row.cas-two-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .cas-form-row.cas-two-cols {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cas-form-field label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #374151;
+}
+
+.cas-form-field .cas-input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    font-size: 15px;
+    transition: all 0.2s;
+}
+
+.cas-form-field .cas-input:focus {
+    outline: none;
+    border-color: var(--cas-primary);
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
+}
+
+/* Navigation */
+.cas-navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 2px solid #e5e7eb;
+}
+
+.cas-navigation .cas-btn {
+    padding: 14px 32px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cas-navigation .cas-btn-primary {
+    background: linear-gradient(135deg, var(--cas-primary), var(--cas-secondary));
+    color: white;
+}
+
+.cas-navigation .cas-btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(79, 70, 229, 0.3);
+}
+
+.cas-navigation .cas-btn-secondary {
+    background: #f3f4f6;
+    color: #374151;
+}
+
+.cas-navigation .cas-btn-secondary:hover {
+    background: #e5e7eb;
+}
+
+/* Success Message */
+.cas-success-message {
+    text-align: center;
+    padding: 60px 40px;
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.5s;
+}
+
+.success-icon {
+    font-size: 80px;
+    margin-bottom: 24px;
+    animation: scaleIn 0.5s;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.cas-success-message h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 16px;
+    color: #111827;
+}
+
+.cas-success-message p {
+    font-size: 16px;
+    color: #6b7280;
+    margin: 0;
+}
+
+/* Loading State */
+.cas-loading {
+    text-align: center;
+    padding: 40px;
+    color: #6b7280;
+}
+
+.cas-loading-spinner {
+    width: 48px;
+    height: 48px;
+    border: 4px solid #e5e7eb;
+    border-top-color: var(--cas-primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 16px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cas-assessment-container {
+        padding: 24px;
+    }
+    
+    .cas-question-text {
+        font-size: 16px;
+    }
+    
+    .cas-navigation {
+        flex-direction: column;
+    }
+    
+    .cas-navigation .cas-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

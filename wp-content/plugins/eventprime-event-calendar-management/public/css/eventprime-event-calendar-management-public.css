@@ -1,0 +1,111 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.ep-gdpr-badge{
+    z-index: 1;
+    width: 10em;
+    height: 13em;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 1em;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    text-decoration: none;
+    transition: box-shadow .2s, border-color .2s;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, .1);
+}
+
+.ep-gdpr-badge-icon-wrap {
+    height: 65%;
+    background-color: #3f45da;
+    background-image: linear-gradient(315deg, #4047db, #6e73f7);
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.ep-gdpr-badge-icon {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.ep-gdpr-badge-text {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: .8em;
+    padding-bottom: .5em;
+    font-size: .9em;
+    line-height: 1.5em;
+    display: flex;
+}
+
+.ep-gdpr-badge-bold {
+    font-size: 200%;
+    font-weight: 700;
+}
+
+
+ul.ep-gdpr-modal-content {
+    margin:0px;
+    padding: 0px;
+}
+
+
+@media (max-width: 1024px) { /* Tablet + Mobile */
+    #ep-frontend-event-submission-section .ep-fes-section .select2-container{
+        width: 100% !important;
+    }
+
+}
+
+
+
+.wp-theme-generatepress .emagic .ep-event-views-filter-group button.ep_event_view_filter{
+    padding: 6px 10px;
+    min-width: 38px;
+}
+
+.wp-theme-generatepress #ep_event_calendar.fc .fc-toolbar.fc-header-toolbar .fc-button-primary {
+    padding: 5px 5px;
+}
+#ep_applied_filters_section #ep_keyword button.ep-btn{
+    text-transform: unset;
+}
+
+
+/* theme Fixes--*/
+
+.coral-dark #ui-datepicker-div .ui-datepicker-calendar tr td a,
+.wp-theme-coral-dark #ui-datepicker-div .ui-datepicker-calendar tr td a {
+    padding: 1px 9px 1px 9px;
+    text-align: center;
+    background-color: transparent;
+    border: 0px;
+}
+
+.coral-dark #ui-datepicker-div .ui-datepicker-calendar th,
+.wp-theme-coral-dark #ui-datepicker-div .ui-datepicker-calendar tr th{
+    color:#000
+}
+
+/* theme Fixes Ends--*/
+
+/*--Frontend Event Submission---*/
+
+#ep-frontend-event-submission-section .ep-frontend-event-form .ep-fes-section .select2.select2-container{
+    width: 100% !important;
+}
+
